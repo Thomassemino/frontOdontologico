@@ -33,11 +33,16 @@ importers:
         specifier: ^4.6.13
         version: 4.6.13
       flowbite:
+<<<<<<< HEAD
         specifier: ^2.5.2
         version: 2.5.2(rollup@4.30.1)
       flowbite-datepicker:
         specifier: ^1.3.2
         version: 1.3.2(rollup@4.30.1)
+=======
+        specifier: ^2.1.1
+        version: 2.5.2(rollup@4.30.1)
+>>>>>>> 514a9869ea2f5c49854a8f8b13dabe1437b60c5c
       flowbite-typography:
         specifier: ^1.0.3
         version: 1.0.5
