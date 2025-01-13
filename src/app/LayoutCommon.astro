@@ -1,6 +1,7 @@
 ---
 import pkg from '../../package.json' assert { type: 'json' };
 import { url } from '../lib/data.js';
+import 'flowbite/dist/flowbite.min.js';
 
 import { SITE_TITLE } from './constants.js';
 
@@ -44,7 +45,6 @@ const { class: clazz } = Astro.props;
 	</head>
 	<body
 		class:list={[
-			//
 			clazz,
 			'bg-gray-50 dark:bg-gray-800',
 			'scrollbar scrollbar-w-3 scrollbar-thumb-rounded-[0.25rem]',
@@ -58,7 +58,6 @@ const { class: clazz } = Astro.props;
 
 <script>
 	import 'flowbite';
-	import 'flowbite/dist/datepicker.js';
 </script>
 
 <style is:global>
