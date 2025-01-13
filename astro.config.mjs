@@ -1,30 +1,27 @@
 import { defineConfig } from 'astro/config';
-
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-
-const DEV_PORT = 2121;
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-	site: process.env.CI
-		? 'https://themesberg.github.io'
-		: `http://localhost:${DEV_PORT}`,
-	base: process.env.CI ? '/flowbite-astro-admin-dashboard' : undefined,
+  site: 'https://tu-dominio-en-vercel.vercel.app', // Esto se actualizará automáticamente cuando despliegues
+  output: 'server', // Necesario para SSR en Vercel
+  adapter: vercel(), // Añadimos el adaptador de Vercel
 
-	// output: 'server',
+  server: {
+    port: process.env.PORT || 2121,
+  },
 
-	/* Like Vercel, Netlify,… Mimicking for dev. server */
-	// trailingSlash: 'always',
+  integrations: [
+    sitemap(),
+    tailwind(),
+  ],
 
-	server: {
-		/* Dev. server only */
-		port: DEV_PORT,
-	},
-
-	integrations: [
-		//
-		sitemap(),
-		tailwind(),
-	],
+  // Configuración para tu API
+  vite: {
+    define: {
+      'process.env.API_URL': JSON.stringify('https://consultorio-odontologico-backend-production-b1c8.up.railway.app/api/')
+    }
+  }
 });
