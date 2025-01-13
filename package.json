@@ -47,6 +47,7 @@
 		"flowbite": "^2.1.1",
 		"flowbite-typography": "^1.0.3",
 		"jsonwebtoken": "^9.0.2",
+		"pnpm": "^9.15.3",
 		"shiki": "^0.14.1",
 		"simple-datatables": "^9.2.1",
 		"tailwind-scrollbar": "^3.0.0",
