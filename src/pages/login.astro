@@ -70,7 +70,7 @@ interface LoginResponse {
 const validateUser = async (email: string, password: string): Promise<LoginResponse> => {
   try {
     // 1. Primero hacemos el login
-    const loginResponse = await fetch('http://localhost:5000/api/login/login', {
+    const loginResponse = await fetch('https://consultorio-odontologico-backend-production-b1c8.up.railway.app/api//login/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ const validateUser = async (email: string, password: string): Promise<LoginRespo
       let userResponse;
       
       if (loginData.rol === 'odontologo') {
-        userResponse = await fetch(`http://localhost:5000/api/medico/findByEmail/${email}`);
+        userResponse = await fetch(`https://consultorio-odontologico-backend-production-b1c8.up.railway.app/api//medico/findByEmail/${email}`);
         const medicoData = await userResponse.json();
         
         if (medicoData.medico) {
@@ -103,7 +103,7 @@ const validateUser = async (email: string, password: string): Promise<LoginRespo
         }
       } 
       else if (loginData.rol === 'secretaria') {
-        userResponse = await fetch(`http://localhost:5000/api/secretaria/buscar/${email}`);
+        userResponse = await fetch(`https://consultorio-odontologico-backend-production-b1c8.up.railway.app/api//secretaria/buscar/${email}`);
         const secretariaData = await userResponse.json();
         
         if (secretariaData.secretaria) {
