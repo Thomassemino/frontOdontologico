@@ -1,5 +1,5 @@
 import { i as isRemotePath, j as joinPaths } from './path_CVKLlyuj.mjs';
-import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, k as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, l as UnsupportedImageConversion, n as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, o as ExpectedImageOptions, p as ExpectedNotESMImage, q as InvalidImageService, t as toStyleString, c as createComponent, s as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, e as addAttribute, u as spreadAttributes, h as createAstro } from './astro/server_CRM8sbCC.mjs';
+import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, k as UnsupportedImageConversion, l as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, n as ExpectedImageOptions, o as ExpectedNotESMImage, p as InvalidImageService, t as toStyleString, c as createComponent, q as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, e as addAttribute, s as spreadAttributes, h as createAstro } from './astro/server_CwWWnrUl.mjs';
 import '../renderers.mjs';
 
 const VALID_SUPPORTED_FORMATS = [
@@ -184,13 +184,6 @@ function isLocalService(service) {
     return false;
   }
   return "transform" in service;
-}
-function parseQuality(quality) {
-  let result = parseInt(quality);
-  if (Number.isNaN(result)) {
-    return quality;
-  }
-  return result;
 }
 const sortNumeric = (a, b) => a - b;
 const baseService = {
@@ -1239,7 +1232,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './sharp_D6VLmQm_.mjs'
+      './build-service_CuS5MwMd.mjs'
     ).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -1953,7 +1946,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   })}  <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(attributes)}${addAttribute(className, "class")}> </picture>`;
 }, "C:/Users/Windows/Documents/Odontograma/frontOdontologico/node_modules/.pnpm/astro@5.1.6_@types+node@22._b9f7b3512161865ac841b349a67bfa8a/node_modules/astro/components/Picture.astro", undefined);
 
-const imageConfig = {"endpoint":{"route":"/_image"},"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[],"experimentalResponsiveImages":false};
+const imageConfig = {"endpoint":{"route":"/_image"},"service":{"entrypoint":"@astrojs/vercel/build-image-service","config":{"sizes":[640,750,828,1080,1200,1920,2048,3840],"domains":[],"remotePatterns":[]}},"domains":[],"remotePatterns":[],"experimentalResponsiveImages":false};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
 const fnv1a52 = (str) => {
@@ -2043,4 +2036,4 @@ const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 const page = () => _page;
 
-export { page as a, baseService as b, parseQuality as p };
+export { baseService as b, page as p };

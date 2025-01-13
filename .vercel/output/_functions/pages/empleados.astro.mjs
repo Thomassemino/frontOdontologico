@@ -1,7 +1,7 @@
 /* empty css                                   */
-import { c as createComponent, r as renderTemplate, d as renderComponent, a as renderScript, m as maybeRenderHead } from '../chunks/astro/server_CRM8sbCC.mjs';
-import { $ as $$LayoutCommon } from '../chunks/LayoutCommon_B2LeAhyB.mjs';
-import { $ as $$LayoutProtected } from '../chunks/LayoutProtected_DakdDe6U.mjs';
+import { c as createComponent, r as renderTemplate, d as renderComponent, a as renderScript, m as maybeRenderHead } from '../chunks/astro/server_CwWWnrUl.mjs';
+import { $ as $$LayoutCommon } from '../chunks/LayoutCommon_D5N_setu.mjs';
+import { $ as $$LayoutProtected } from '../chunks/LayoutProtected_BDJOHkXs.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Empleados = createComponent(async ($$result, $$props, $$slots) => {

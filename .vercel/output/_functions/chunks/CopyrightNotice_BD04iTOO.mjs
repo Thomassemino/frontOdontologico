@@ -1,4 +1,4 @@
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead } from './astro/server_CRM8sbCC.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead } from './astro/server_CwWWnrUl.mjs';
 
 const $$CopyrightNotice = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<p class="my-10 text-sm text-center text-gray-500">

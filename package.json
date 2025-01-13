@@ -29,12 +29,13 @@
 	],
 	"type": "module",
 	"scripts": {
-		"astro": "astro",
-		"build": "astro build",
-		"dev": "astro dev",
-		"preview": "astro preview",
-		"start": "astro dev"
-	},
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "vercel dev",
+    "deploy": "vercel deploy",
+    "astro": "astro"
+  },
 	"dependencies": {
 		"@astrojs/sitemap": "^3.2.1",
 		"@astrojs/tailwind": "^5.1.4",

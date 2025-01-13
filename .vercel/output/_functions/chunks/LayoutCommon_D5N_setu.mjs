@@ -1,4 +1,4 @@
-import { c as createComponent, r as renderTemplate, a as renderScript, b as renderSlot, e as addAttribute, g as renderHead, h as createAstro } from './astro/server_CRM8sbCC.mjs';
+import { c as createComponent, r as renderTemplate, a as renderScript, b as renderSlot, e as addAttribute, g as renderHead, h as createAstro } from './astro/server_CwWWnrUl.mjs';
 import 'flowbite/dist/flowbite.min.js';
 /* empty css                             */
 
@@ -13,7 +13,7 @@ const license = "MIT";
 const author = "Bergside Inc.";
 const contributors = ["Zoltán Szőgyényi <https://twitter.com/zoltanszogyenyi>","Robert Tanislav <https://twitter.com/roberttanislav>","Julian Cataldo <https://twitter.com/Julian_Cataldo>"];
 const type = "module";
-const scripts = {"astro":"astro","build":"astro build","dev":"astro dev","preview":"astro preview","start":"astro dev"};
+const scripts = {"dev":"astro dev","start":"astro dev","build":"astro build","preview":"vercel dev","deploy":"vercel deploy","astro":"astro"};
 const dependencies = {"@astrojs/sitemap":"^3.2.1","@astrojs/tailwind":"^5.1.4","@astrojs/vercel":"^8.0.2","@faker-js/faker":"^7.6.0","apexcharts":"^3.37.2","astro":"^5.1.6","datatables.net":"^2.1.8","flatpickr":"^4.6.13","flowbite":"^2.5.2","flowbite-datepicker":"^1.3.2","flowbite-typography":"^1.0.3","jsonwebtoken":"^9.0.2","pnpm":"^9.15.3","shiki":"^0.14.1","simple-datatables":"^9.2.1","tailwind-scrollbar":"^3.0.0","tailwindcss":"^3.0.24"};
 const devDependencies = {"@types/eslint":"^8.21.1","@types/jsonwebtoken":"^9.0.7","@typescript-eslint/eslint-plugin":"^5.54.1","@typescript-eslint/parser":"^5.54.1","astro-eslint-parser":"^0.11.0","eslint-config-airbnb-base":"^15.0.0","eslint-config-airbnb-typescript":"^17.0.0","eslint-config-prettier":"^8.7.0","eslint-import-resolver-typescript":"^3.5.3","eslint-plugin-astro":"^0.23.0","eslint-plugin-import":"^2.27.5","eslint-plugin-prettier":"^4.2.1","eslint-plugin-tsdoc":"^0.2.17"};
 const pkg = {

@@ -1,7 +1,7 @@
 /* empty css                                      */
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent, e as addAttribute, b as renderSlot } from '../../chunks/astro/server_CRM8sbCC.mjs';
-import { $ as $$CopyrightNotice } from '../../chunks/CopyrightNotice_B6bKuU4G.mjs';
-import { u as url, $ as $$LayoutCommon, a as asset } from '../../chunks/LayoutCommon_B2LeAhyB.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent, e as addAttribute, b as renderSlot } from '../../chunks/astro/server_CwWWnrUl.mjs';
+import { $ as $$CopyrightNotice } from '../../chunks/CopyrightNotice_BD04iTOO.mjs';
+import { u as url, $ as $$LayoutCommon, a as asset } from '../../chunks/LayoutCommon_D5N_setu.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$FooterStacked = createComponent(($$result, $$props, $$slots) => {

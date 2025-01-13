@@ -5,9 +5,15 @@ import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server', // Necesario para SSR en Vercel
-  adapter: vercel(), // Añadimos el adaptador de Vercel
-
+  output: 'server',
+  adapter: vercel({
+    analytics: true,
+    imageService: true,
+    devMode: true, // Habilita el modo desarrollo
+    webAnalytics: {
+      enabled: true
+    }
+  }),
   integrations: [
     sitemap(),
     tailwind(),
